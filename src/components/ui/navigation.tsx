@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Globe, Heart, Users, BookOpen, Star } from "lucide-react";
+import { Menu, X, Compass, GraduationCap, Target, Award, UserPlus } from "lucide-react";
 import { Button } from "./button";
-import logo from "@/assets/logo.png";
+import awwLogo from "@/assets/aww-logo.png";
 
 const navigationItems = [
-  { name: "Qui Sommes-nous", href: "/qui-sommes-nous", icon: Users },
-  { name: "Nos Programmes", href: "/nos-programmes", icon: BookOpen },
-  { name: "Nos Piliers d'actions", href: "/nos-piliers", icon: Globe },
-  { name: "Pourquoi AWW", href: "/pourquoi-aww", icon: Star },
-  { name: "Nous Rejoindre", href: "/nous-rejoindre", icon: Heart },
+  { name: "Qui Sommes-nous", href: "/qui-sommes-nous", icon: Compass },
+  { name: "Nos Programmes", href: "/nos-programmes", icon: GraduationCap },
+  { name: "Nos Piliers d'actions", href: "/nos-piliers", icon: Target },
+  { name: "Pourquoi AWW", href: "/pourquoi-aww", icon: Award },
+  { name: "Nous Rejoindre", href: "/nous-rejoindre", icon: UserPlus },
 ];
 
 export function Navigation() {
@@ -25,9 +25,9 @@ export function Navigation() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src={logo} 
+              src={awwLogo} 
               alt="AWW Logo" 
-              className="h-10 w-10 object-contain"
+              className="h-12 w-auto object-contain"
             />
             <div className="hidden sm:block">
               <h1 className="text-xl font-playfair font-semibold text-primary">

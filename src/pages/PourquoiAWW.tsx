@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TrendingUp, Users, Building, Sprout } from "lucide-react";
+import { TrendingUp, Users2, Building, Sprout } from "lucide-react";
 
 const defis = [
   {
@@ -27,7 +27,7 @@ const solutions = [
     id: "club-shepreneures",
     title: "Le Club des Shepreneures",
     description: "Une communauté solidaire pour apprendre, partager et grandir dans un environnement bienveillant.",
-    icon: Users,
+    icon: Users2,
     features: [
       "Networking entre femmes entrepreneures",
       "Sessions de mentorat de groupe",

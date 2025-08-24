@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
-import { ExternalLink, Send, Heart, Users } from "lucide-react";
+import { ExternalLink, Send, TrendingUp, Users2 } from "lucide-react";
 
 export default function NousRejoindre() {
   const [formData, setFormData] = useState({
@@ -83,7 +83,7 @@ export default function NousRejoindre() {
               <Card className="border-0 shadow-xl bg-gradient-to-br from-empowerment/5 to-solidarity/5">
                 <CardHeader className="text-center pb-8">
                   <div className="w-20 h-20 mx-auto bg-empowerment/10 rounded-full flex items-center justify-center mb-6">
-                    <Heart className="h-10 w-10 text-empowerment" />
+                    <TrendingUp className="h-10 w-10 text-empowerment" />
                   </div>
                   <CardTitle className="text-2xl font-playfair text-primary">
                     Rejoindre le Mouvement AWW
@@ -101,7 +101,7 @@ export default function NousRejoindre() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-8 py-4 bg-empowerment text-empowerment-foreground font-medium rounded-lg hover:bg-empowerment-hover transition-colors text-lg"
                   >
-                    <Users className="h-6 w-6 mr-3" />
+                    <Users2 className="h-6 w-6 mr-3" />
                     Rejoindre le mouvement
                     <ExternalLink className="h-5 w-5 ml-3" />
                   </a>

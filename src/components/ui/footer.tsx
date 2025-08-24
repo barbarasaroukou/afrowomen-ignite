@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Twitter, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/logo.png";
+import awwLogo from "@/assets/aww-logo.png";
 
 const socialLinks = [
   { name: "Facebook", href: "https://m.facebook.com/afrowomenworkshops/", icon: Facebook },
@@ -25,9 +25,9 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src={logo} 
+                src={awwLogo} 
                 alt="AWW Logo" 
-                className="h-10 w-10 object-contain brightness-0 invert"
+                className="h-12 w-auto object-contain"
               />
               <h3 className="text-xl font-playfair font-semibold">
                 Afro Women Workshops

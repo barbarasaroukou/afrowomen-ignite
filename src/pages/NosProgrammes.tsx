@@ -1,14 +1,14 @@
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Users, Target, Lightbulb } from "lucide-react";
+import { Briefcase, Users2, Target, Sprout } from "lucide-react";
 
 const programmes = [
   {
     id: "ateliers-formation",
     title: "Ateliers de formation",
     description: "Des sessions interactives sur la création d'entreprise, la gestion financière, le marketing digital, et bien plus encore.",
-    icon: BookOpen,
+    icon: Briefcase,
     features: [
       "Création et développement d'entreprise",
       "Gestion financière et comptabilité",
@@ -21,7 +21,7 @@ const programmes = [
     id: "programmes-mentorat",
     title: "Programmes de mentorat",
     description: "Un accompagnement personnalisé avec des expertes pour aider chaque femme à relever ses défis professionnels.",
-    icon: Users,
+    icon: Users2,
     features: [
       "Mentorat individuel avec des expertes",
       "Suivi personnalisé sur 6 mois",
@@ -47,7 +47,7 @@ const programmes = [
     id: "innovation-durable",
     title: "Innovation & Développement Durable",
     description: "Programmes spécialisés intégrant les principes du développement durable dans l'entrepreneuriat.",
-    icon: Lightbulb,
+    icon: Sprout,
     features: [
       "Entrepreneuriat social et environnemental",
       "Économie circulaire et éco-innovation",

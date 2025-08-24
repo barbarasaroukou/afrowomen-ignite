@@ -3,22 +3,22 @@ import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Users, BookOpen, Lightbulb, Heart } from "lucide-react";
+import { ArrowRight, Briefcase, Users2, Sprout, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-women.jpg";
 
 const features = [
   {
-    icon: BookOpen,
+    icon: Briefcase,
     title: "Formation & Mentorat",
     description: "Programmes complets pour développer vos compétences entrepreneuriales et bénéficier d'un accompagnement personnalisé."
   },
   {
-    icon: Users,
+    icon: Users2,
     title: "Communauté Solidaire", 
     description: "Rejoignez le Club des Shepreneures, une communauté bienveillante pour apprendre, partager et grandir ensemble."
   },
   {
-    icon: Lightbulb,
+    icon: Sprout,
     title: "Innovation Durable",
     description: "Intégrez les principes du développement durable dans vos projets entrepreneuriaux pour un impact positif."
   }
@@ -159,7 +159,7 @@ const Index = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <div className="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-8">
-                <Heart className="h-10 w-10 text-empowerment" />
+                <TrendingUp className="h-10 w-10 text-empowerment" />
               </div>
               <h2 className="heading-md text-primary mb-6">
                 Prête à transformer vos défis en opportunités ?

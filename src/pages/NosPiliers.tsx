@@ -1,28 +1,28 @@
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Globe, BookOpen, Search, Users } from "lucide-react";
+import { Leaf, GraduationCap, SearchCheck, Users2 } from "lucide-react";
 
 const piliers = [
   {
     id: "developpement-durable",
     title: "Développement Durable",
     description: "Sensibiliser aux pratiques responsables, soutenir des entreprises éthiques et créer des opportunités durables.",
-    icon: Globe,
+    icon: Leaf,
     color: "empowerment"
   },
   {
     id: "education-sensibilisation",
     title: "Éducation & Sensibilisation",
     description: "Valoriser l'entrepreneuriat féminin comme moteur de développement économique et social.",
-    icon: BookOpen,
+    icon: GraduationCap,
     color: "solidarity"
   },
   {
     id: "recherche-developpement",
     title: "Recherche & Développement",
     description: "Analyser les besoins réels des femmes pour concevoir des programmes ciblés et innovants.",
-    icon: Search,
+    icon: SearchCheck,
     color: "empowerment"
   }
 ];
@@ -117,7 +117,7 @@ export default function NosPiliers() {
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         <div className="w-12 h-12 bg-solidarity/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                          <Users className="h-6 w-6 text-solidarity" />
+                          <Users2 className="h-6 w-6 text-solidarity" />
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg font-playfair font-medium text-primary mb-2">
