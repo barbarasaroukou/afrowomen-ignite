@@ -1,12 +1,13 @@
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
 import { TeamMemberCard } from "@/components/TeamMemberCard";
-import founder1 from "@/assets/founder-1.jpg";
-import team2 from "@/assets/team-2.jpg";
-import team3 from "@/assets/team-3.jpg";
+import founder1 from "@/assets/fondatrices.jpg";
+import team2 from "@/assets/angelique.jpg";
+import team3 from "@/assets/alice.jpg";
+import team4 from "@/assets/mariama.jpg";
 
 const founderData = {
-  id: "founder-1",
+  id: "fondatrices",
   name: "Fondatrice Principale",
   role: "CEO & Fondatrice",
   image: founder1,
@@ -17,27 +18,27 @@ const founderData = {
 const teamMembers = [
   {
     id: "team-2",
-    name: "Dr. Marie Dubois",
-    role: "Directrice des Programmes",
+    name: "Angélique Marguerite Berthe Diène",
+    role: "Instigatrice et Directrice générale",
     image: team2,
-    description: "Experte en développement durable et formation entrepreneuriale, Marie coordonne nos programmes de mentorat et ateliers.",
-    fullBio: "Dr. Marie Dubois apporte son expertise de 12 ans dans le développement de programmes éducatifs innovants. Diplômée en sciences sociales, elle a accompagné plus de 500 femmes entrepreneures dans leur parcours professionnel à travers l'Afrique et les Caraïbes."
+    description: "Entrepreneure sociale et militante engagée, Angélique œuvre pour l’autonomisation des femmes à travers l’entrepreneuriat, l’éducation et la culture. ",
+    fullBio: "Entrepreneure sociale et militante engagée, Angélique œuvre pour l’autonomisation des femmes à travers l’entrepreneuriat, l’éducation et la culture. Forte d’une expertise en gestion, comptabilité et management acquise entre le Sénégal, la France et le Canada, elle a évolué au sein d’entreprises et d’organisations internationales avant de se consacrer à l’impact social. En 2015, elle fonde Afro Women Workshops (AWW) pour accompagner les femmes entrepreneures issues des communautés africaines et caribéennes. Elle est également à l’origine d’initiatives telles que R Magazine, Vilicatio, Domaine Diène ou encore le festival Terracott’Art, alliant développement durable, culture et entrepreneuriat.Sa vision : bâtir un écosystème inclusif où les femmes afrodescendantes peuvent innover et transformer le monde.."
   },
   {
     id: "team-3", 
-    name: "Sarah Johnson",
-    role: "Responsable Partenariats",
+    name: "Alice Niang",
+    role: "Co-fondatrice et Administratrice",
     image: team3,
-    description: "Spécialiste en développement de partenariats stratégiques et en mobilisation de ressources pour nos initiatives.",
-    fullBio: "Sarah Johnson est une professionnelle chevronnée avec 10 ans d'expérience dans le développement de partenariats internationaux. Elle a travaillé avec des organisations prestigieuses et a levé plus de 2 millions d'euros pour des projets d'empowerment féminin."
+    description: "Juriste passionnée, Alice Niang est une professionnelle polyvalente et rigoureuse.",
+    fullBio: "Juriste passionnée, Alice Niang est une professionnelle polyvalente et rigoureuse. Elle a mis son expertise en droit et en gestion administrative au service de l’impact social, après une carrière entre la France, le Canada et le Sénégal. Co-fondatrice d’AWW, elle joue un rôle clé dans la structuration de l’organisation, le service à la clientèle et la gestion des opérations. Son engagement profond pour l'autonomisation des femmes et son expertise font d'elle une actrice essentielle du changement."
   },
   {
     id: "team-4",
-    name: "Aminata Traoré", 
-    role: "Coordinatrice Bien-être",
-    image: team2,
-    description: "Psychologue et coach certifiée, Aminata développe nos programmes de bien-être et d'accompagnement personnel.",
-    fullBio: "Aminata Traoré est psychologue clinicienne et coach certifiée en développement personnel. Elle se spécialise dans l'accompagnement des femmes entrepreneures et a développé des méthodes innovantes pour gérer le stress et développer la confiance en soi."
+    name: "Mariama Dabo", 
+    role: "Co-fondatrice et Administratrice",
+    image: team4,
+    description: "Connue également sous le nom d’Émeraude, Mariama est une entrepreneure visionnaire au parcours riche : animatrice radio, présentatrice télé, mannequin international, photographe, promotrice artisanale et gestionnaire d’entreprise.",
+    fullBio: "Connue également sous le nom d’Émeraude, Mariama est une entrepreneure visionnaire au parcours riche : animatrice radio, présentatrice télé, mannequin international, photographe, promotrice artisanale et gestionnaire d’entreprise. Depuis son arrivée au Canada, elle a fondé une garderie et développe des projets de valorisation des produits de sa région natale, la Casamance. Au sein d’AWW, elle encourage la solidarité plutôt que la compétition, et insuffle un esprit de sororité entrepreneuriale."
   }
 ];
 
