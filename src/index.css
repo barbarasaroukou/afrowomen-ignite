@@ -2,41 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* AWW Design System - Sophisticated & Professional 
+All colors MUST be HSL for consistent theming */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors - Sophisticated Purple & Rose Palette */
+    --background: 350 20% 99%;
+    --foreground: 240 15% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 240 15% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 240 15% 9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Sophisticated Purple */
+    --primary: 260 35% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 260 35% 20%;
+    
+    /* Secondary - Elegant Rose */
+    --secondary: 340 25% 88%;
+    --secondary-foreground: 240 15% 9%;
+    --secondary-hover: 340 25% 82%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Warm Lavender */
+    --accent: 280 20% 92%;
+    --accent-foreground: 240 15% 9%;
+    --accent-hover: 280 20% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Supporting Colors */
+    --muted: 350 15% 96%;
+    --muted-foreground: 240 8% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Empowerment Purple - For CTA and highlights */
+    --empowerment: 270 50% 40%;
+    --empowerment-foreground: 0 0% 98%;
+    --empowerment-hover: 270 50% 35%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Solidarity Rose - For feminine touches */
+    --solidarity: 340 40% 65%;
+    --solidarity-foreground: 0 0% 98%;
+    --solidarity-hover: 340 40% 60%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Warm Neutrals */
+    --warm-gray: 30 8% 95%;
+    --warm-gray-foreground: 240 15% 15%;
 
-    --radius: 0.5rem;
+    /* Status Colors */
+    --destructive: 0 65% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 50% 45%;
+    --success-foreground: 0 0% 98%;
+
+    --border: 350 15% 89%;
+    --input: 350 15% 89%;
+    --ring: 260 35% 25%;
+
+    --radius: 0.75rem;
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(240 15% 9% / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(240 15% 9% / 0.12);
+    --shadow-strong: 0 8px 32px -8px hsl(240 15% 9% / 0.16);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +135,72 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair font-medium tracking-tight;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* Hero Section Styles */
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(var(--empowerment)) 0%, hsl(var(--solidarity)) 100%);
+  }
+
+  /* Card Hover Effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .card-hover:hover {
+    box-shadow: var(--shadow-medium);
+  }
+
+  /* Button Variants */
+  .btn-empowerment {
+    @apply bg-empowerment text-empowerment-foreground hover:bg-empowerment-hover;
+    transition: var(--transition-smooth);
+  }
+
+  .btn-solidarity {
+    @apply bg-solidarity text-solidarity-foreground hover:bg-solidarity-hover;
+    transition: var(--transition-smooth);
+  }
+
+  /* Typography Scale */
+  .heading-xl {
+    @apply text-4xl md:text-6xl lg:text-7xl font-playfair font-semibold tracking-tight;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-4xl lg:text-5xl font-playfair font-medium tracking-tight;
+  }
+
+  .heading-md {
+    @apply text-2xl md:text-3xl font-playfair font-medium tracking-tight;
+  }
+
+  .body-lg {
+    @apply text-lg md:text-xl leading-relaxed;
+  }
+
+  .body-base {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  /* Animation Classes */
+  .fade-in-up {
+    @apply animate-in slide-in-from-bottom-4 duration-700;
+  }
+
+  .fade-in-scale {
+    @apply animate-in fade-in-0 zoom-in-95 duration-500;
   }
 }
